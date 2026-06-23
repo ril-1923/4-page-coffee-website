@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aroma Coffee - Contact</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&family=Montserrat:wght@500;700&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body class="contact-page">
+    <nav class="navbar navbar-expand-lg navbar-dark">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <span class="brand-icon">☕</span> Aroma Coffee
+        </a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="products.html">Products</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="contact.html">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="contact-hero py-5">
+      <div class="container text-center">
+        <h1 class="display-2 mb-3">Get In Touch</h1>
+        <p class="lead">We'd love to hear from you. Reach out and let's start a conversation.</p>
+      </div>
+    </section>
+
+    <section class="contact-content py-5">
+      <div class="container">
+        <div class="row g-5">
+          <div class="col-lg-6">
+            <h2 class="mb-4">Send Us a Message</h2>
+            <form id="contactForm" class="contact-form">
+              <div class="mb-4">
+                <label for="name" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="name" placeholder="John Doe" required />
+              </div>
+              <div class="mb-4">
+                <label for="email" class="form-label">Email Address</label>
+                <input type="email" class="form-control" id="email" placeholder="john@example.com" required />
+              </div>
+              <div class="mb-4">
+                <label for="subject" class="form-label">Subject</label>
+                <select class="form-select" id="subject" required>
+                  <option value="">Choose a topic...</option>
+                  <option value="general">General Inquiry</option>
+                  <option value="wholesale">Wholesale Opportunities</option>
+                  <option value="support">Customer Support</option>
+                  <option value="partnership">Partnership</option>
+                </select>
+              </div>
+              <div class="mb-4">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="6" placeholder="Tell us what's on your mind..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-lg w-100">Send Message</button>
+            </form>
+            <div id="formSuccess" class="alert alert-success mt-3" style="display: none;">
+              Thank you for your message! We'll get back to you soon.
+            </div>
+          </div>
+
+          <div class="col-lg-6">
+            <h2 class="mb-4">Contact Information</h2>
+
+            <div class="contact-info-card mb-4">
+              <h4>Visit Us</h4>
+              <p class="mb-1">123 Coffee Street</p>
+              <p class="mb-1">Seattle, WA 98101</p>
+              <p>United States</p>
+            </div>
+
+            <div class="contact-info-card mb-4">
+              <h4>Call Us</h4>
+              <p class="mb-1">Main: +1 (555) 123-4567</p>
+              <p class="mb-1">Wholesale: +1 (555) 123-4568</p>
+              <p>Support: +1 (555) 123-4569</p>
+            </div>
+
+            <div class="contact-info-card mb-4">
+              <h4>Email Us</h4>
+              <p class="mb-1">General: info@aromacoffee.com</p>
+              <p class="mb-1">Support: support@aromacoffee.com</p>
+              <p>Wholesale: wholesale@aromacoffee.com</p>
+            </div>
+
+            <div class="contact-info-card">
+              <h4>Business Hours</h4>
+              <p class="mb-1">Monday - Friday: 8:00 AM - 6:00 PM</p>
+              <p class="mb-1">Saturday: 9:00 AM - 5:00 PM</p>
+              <p>Sunday: 10:00 AM - 4:00 PM</p>
+            </div>
+
+            <div class="social-links mt-4">
+              <h4 class="mb-3">Follow Us</h4>
+              <div class="d-flex gap-3">
+                <a href="#" class="social-icon">📘</a>
+                <a href="#" class="social-icon">📷</a>
+                <a href="#" class="social-icon">🐦</a>
+                <a href="#" class="social-icon">📌</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section py-5">
+      <div class="container">
+        <div class="map-placeholder">
+          <div class="map-content">
+            <span class="map-icon">📍</span>
+            <p>Seattle, WA</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer text-center py-4">
+      <div class="container">
+        <p>&copy; 2024 Aroma Coffee. Crafted with love and caffeine.</p>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
